@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickScribe AI - Audio to Text in Seconds</title>
+<meta name="description" content="Turn any audio or video into text instantly. Free 5 minutes daily. Powered by AI.">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+body { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #fff; }
+.container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+header { text-align: center; padding: 60px 20px 40px; }
+.logo { font-size: 64px; margin-bottom: 20px; }
+h1 { font-size: 48px; margin-bottom: 20px; font-weight: 800; }
+.tagline { font-size: 22px; opacity: 0.95; margin-bottom: 40px; line-height: 1.5; }
+
+.cta-btn {
+  display: inline-block;
+  background: #fff;
+  color: #764ba2;
+  padding: 18px 40px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+  margin: 10px;
+}
+.cta-btn:hover { transform: translateY(-3px); }
+.cta-btn.secondary { background: transparent; color: #fff; border: 2px solid #fff; }
+
+.features { padding: 60px 20px; text-align: center; }
+.features h2 { font-size: 36px; margin-bottom: 40px; }
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.feature {
+  background: rgba(255,255,255,0.15);
+  padding: 30px 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+.feature-icon { font-size: 48px; margin-bottom: 15px; }
+.feature h3 { font-size: 20px; margin-bottom: 10px; }
+.feature p { opacity: 0.9; line-height: 1.5; }
+
+.pricing { padding: 60px 20px; text-align: center; }
+.pricing h2 { font-size: 36px; margin-bottom: 40px; }
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.price-card {
+  background: rgba(255,255,255,0.15);
+  padding: 40px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+.price-card.featured {
+  background: #fff;
+  color: #333;
+  transform: scale(1.05);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.price-card h3 { font-size: 24px; margin-bottom: 10px; }
+.price { font-size: 48px; font-weight: 800; margin: 20px 0; }
+.price-card ul { list-style: none; padding: 0; margin: 20px 0; text-align: left; }
+.price-card li { padding: 8px 0; }
+.price-card li::before { content: "✅ "; }
+
+.how-it-works { padding: 60px 20px; text-align: center; }
+.how-it-works h2 { font-size: 36px; margin-bottom: 40px; }
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.step {
+  background: rgba(255,255,255,0.15);
+  padding: 25px 15px;
+  border-radius: 16px;
+}
+.step-num {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #764ba2;
+  border-radius: 50%;
+  line-height: 40px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+footer a { color: #fff; text-decoration: none; }
+
+@media (max-width: 600px) {
+  h1 { font-size: 36px; }
+  .tagline { font-size: 18px; }
+  .price-card.featured { transform: scale(1); }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="logo">🎤</div>
+    <h1>QuickScribe AI</h1>
+    <p class="tagline">Turn any audio or video into text in seconds.<br>Powered by AI. Free to start.</p>
+    <a href="https://t.me/mytranscriber_15bot" class="cta-btn">🚀 Try Free on Telegram</a>
+  </header>
+
+  <section class="features">
+    <h2>Why QuickScribe?</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Lightning Fast</h3>
+        <p>Get transcriptions in under 30 seconds, no matter the length.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎯</div>
+        <h3>High Accuracy</h3>
+        <p>Powered by OpenAI Whisper — 99% accurate across 50+ languages.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💰</div>
+        <h3>Dirt Cheap</h3>
+        <p>Save $12/month vs Otter.ai. Start free, upgrade when you need more.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📱</div>
+        <h3>Works Anywhere</h3>
+        <p>Use it directly in Telegram — no app installs, no website logins.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎥</div>
+        <h3>Any Format</h3>
+        <p>Voice notes, MP3, MP4, videos — we transcribe it all.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔒</div>
+        <h3>Private & Secure</h3>
+        <p>Files are processed instantly and never stored. Your data stays yours.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Open Telegram</h3>
+        <p>Search @mytranscriber_15bot</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Send a file</h3>
+        <p>Voice note, audio, or video</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Get text back</h3>
+        <p>Fully transcribed in seconds</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <h2>Simple pricing</h2>
+    <div class="price-cards">
+      <div class="price-card">
+        <h3>Free</h3>
+        <div class="price">$0</div>
+        <ul>
+          <li>5 minutes per day</li>
+          <li>All file formats</li>
+          <li>50+ languages</li>
+          <li>No signup needed</li>
+        </ul>
+        <a href="https://t.me/mytranscriber_15bot" class="cta-btn secondary">Start Free</a>
+      </div>
+      <div class="price-card featured">
+        <h3>Premium</h3>
+        <div class="price">$5<span style="font-size: 18px;">/month</span></div>
+        <ul>
+          <li>Unlimited transcription</li>
+          <li>Priority processing</li>
+          <li>Longer files supported</li>
+          <li>Premium support</li>
+        </ul>
+        <a href="https://t.me/mytranscriber_15bot" class="cta-btn">Upgrade Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built with ❤️ by QuickScribe AI</p>
+    <p style="margin-top: 10px;"><a href="https://t.me/mytranscriber_15bot">Try on Telegram</a></p>
+  </footer>
+</div>
+
+</body>
+</html>
